@@ -2,13 +2,9 @@
 
 	<PropertyGroup>
 		<OutputType>Exe</OutputType>
-		<TargetFrameworks>net472;net48;net6.0;net8.0;net9.0;net10.0</TargetFrameworks>
-
-		<!-- 啟用 Nullable 支援（建議搭配下面的 LangVersion 確保舊框架編譯器看得懂） -->
+		<TargetFrameworks>net461;net472;net48;net481;net6.0;net8.0;net9.0;net10.0</TargetFrameworks>
 		<Nullable>enable</Nullable>
 		<LangVersion>latest</LangVersion>
-
-		<ImplicitUsings Condition="'$(TargetFramework)' != 'net472' And '$(TargetFramework)' != 'net48'">enable</ImplicitUsings>
 	</PropertyGroup>
 
 	<ItemGroup>
