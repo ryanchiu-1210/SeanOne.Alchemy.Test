@@ -21,7 +21,8 @@ namespace SeanOne.Alchemy.Test
                               $"Incorrect: {TestFactory.IncorrectCount}, " +
                               $"Error: {TestFactory.ErrorCount}");
 
-            Console.ReadKey();
+            if (!Console.IsInputRedirected && !Console.IsOutputRedirected)
+                Console.ReadKey();
         }
 
         static void DisplayRuntimeVersion()
